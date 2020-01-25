@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <link rel="stylesheet" type="text/css" href="./development.css" />
+    <script src="sidebar.js"></script>
 </head>
 
 <body>
@@ -25,17 +26,26 @@
                 <div class="navbar-right">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href=#>ABOUT US</a></li>
-                        <li><a href=#>DESIGN</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">DESIGN</a></li>
                         <li><a href="development.html"><strong>DEVELOPMENT</strong></a></li>
                     </ul>
                 </div>
                 <div class="navbar-right-mobile">
                     <ul>
-                        <li><i class="fa fa-bars"></i></li>
+                        <li><button id="btn-side"type="button"onclick="opensidebar()"><i id="side-btn"class="fa fa-bars"></i></button></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div id="overlay" class="overlay" onclick="closesidebar()"></div>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li>ABOUT US</li>
+                <li>DESIGN</li>
+                <li><a href="development.html"class="higlight">DEVELOPMENT</a></li>
+            </ul>
         </div>
         <div class="banner">
             <div class="heading">

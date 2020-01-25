@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script src="sidebar.js"></script>
 </head>
 
 <body>
@@ -24,17 +25,26 @@
                 <div class="navbar-right">
                     <ul>
                         <li><a href="index.html"><strong>HOME</strong></a></li>
-                        <li><a href=#>ABOUT US</a></li>
-                        <li><a href=#>DESIGN</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">DESIGN</a></li>
                         <li><a href="development.html">DEVELOPMENT</a></li>
                     </ul>
                 </div>
                 <div class="navbar-right-mobile">
                     <ul>
-                        <li><button type="button"><i class="fa fa-bars"></i></button></li>
+                        <li><button id="btn-side"type="button"onclick="opensidebar()"><i id="side-btn"class="fa fa-bars"></i></button></li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div id="overlay" class="overlay" onclick="closesidebar()"></div>
+        <div id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="index.html"class="higlight">HOME</a></li>
+                <li>ABOUT US</li>
+                <li>DESIGN</li>
+                <li><a href="development.html">DEVELOPMENT</a></li>
+            </ul>
         </div>
         <div class="container-main gap">
             <div class="img-left"><img class="img-main"src="images/main_illustration.png"/></div>
