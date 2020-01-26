@@ -18,7 +18,6 @@
     padding: 50px 0 30px 0;
     font-size: 0.95em;
     color: #666666;
-    line-height: 1.75em;
     display: grid;
     justify-items: start;
 }
@@ -26,8 +25,8 @@
     font-size: 1.15em;
     color: #878787;
 }
-.font-big{
-    font-size: 1em;
+.font-normal{
+    font-size: 0.9em !important;
 }
 .font-head{
     font-size: 1.2em !important;
@@ -42,6 +41,7 @@
     background-color: #f7f7f7;
     padding: 50px;
     justify-items: center;
+    line-height: 1.75em;
 }
 .block-up{
     margin :30px 0 50px 0;
@@ -49,16 +49,18 @@
     padding: 25px 40px 25px 40px;
     display: grid;
     grid-template-columns: 1fr 30px 1fr;
+    line-height: 1.75em;
 }
 
 
 .block-up-mobile{
     margin :30px 0 50px 0;
     background-color: #f7f7f7;
-    padding: 25px 10px 25px 10px;
+    padding: 48px;
     display: none;
     width: 100%;
     justify-items: center;
+    line-height: 1.75em;
 }
 .block-or-mobile{
     display: grid;
@@ -122,7 +124,7 @@
     .block-normal{
         margin :30px 0 50px 0;
         background-color: #f7f7f7;
-        padding: 20px 10px 20px 10px;
+        padding: 30px 40px 30px 40px;
         justify-items: center;
         display: grid;
     }
