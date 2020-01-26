@@ -35,6 +35,9 @@ button{
     z-index: 10;
     padding-top: 20px;
 }
+.navbar-shadow{
+    box-shadow: 10px 11px 34px -10px rgba(0,0,0,0.06)!important;
+}
 .navbar-contents{
     grid-column-start: 2;
     display: grid;
