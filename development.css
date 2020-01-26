@@ -124,6 +124,7 @@
         background-color: #f7f7f7;
         padding: 20px 10px 20px 10px;
         justify-items: center;
+        display: grid;
     }
     .block-up{
         display: none;
@@ -136,11 +137,20 @@
     }
     .block-head{
         font-size: 1.2em;
+        justify-self: center;
     }
     .head-text{
         font-size: 0.95em;
     }
     .download-mobile{
         text-align: center;
+    }
+    .download-link-container{
+        text-align: center;
+    }
+    .mobile-left{
+        display: block;
+        text-align: left;
+        width: 100%;
     }
 }
